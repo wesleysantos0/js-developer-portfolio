@@ -1,0 +1,46 @@
+.portfolio {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.portfolio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.portfolio li .titlle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+
+.portfolio li .titlle.github::before {
+    content: "";
+    display: inline;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .5rem;
+    background-image: url('../imagens/icons/iconmonstr-github-1\ 1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.portfolio li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.portfolio li a:hover {
+    text-decoration: underline;
+}
